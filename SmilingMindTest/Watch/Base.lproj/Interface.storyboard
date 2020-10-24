@@ -2,14 +2,14 @@
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CM5-L8-Vid">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
         <!--Meditation Selector-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Meditation Selector" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                <controller identifier="Meditation Selector" hidesWhenLoading="NO" fullBounds="YES" id="AgC-eL-Hgc">
                     <items>
                         <label alignment="left" id="6tZ-pG-TcC"/>
                         <table alignment="left" id="4AP-cl-IcF">
@@ -81,52 +81,12 @@
                             </items>
                         </table>
                     </items>
-                </controller>
-            </objects>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="W1r-Up-3ih">
-            <objects>
-                <notificationController id="K8L-2h-lGf" customClass="NotificationController" customModule="Watch_Extension">
-                    <items>
-                        <label width="121" alignment="left" text="Post-Workout Meditation" numberOfLines="4" id="aiB-KG-l8d"/>
-                    </items>
-                    <notificationCategory key="notificationCategory" identifier="PostExerciseMeditationNotification" id="Gwf-Zu-whW"/>
-                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="aiB-KG-l8d" id="lwa-JL-C1R"/>
-                        <segue destination="P81-aL-kcZ" kind="relationship" relationship="dynamicNotificationInterface" id="2lg-dz-2he"/>
-                        <segue destination="oqX-Oq-ktY" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="hRS-Kd-H63"/>
+                        <outlet property="myTable" destination="4AP-cl-IcF" id="MgT-m1-bkH"/>
                     </connections>
-                </notificationController>
-            </objects>
-            <point key="canvasLocation" x="-15" y="99"/>
-        </scene>
-        <!--Dynamic Notification Interface Controller-->
-        <scene sceneID="rq3-rt-JF4">
-            <objects>
-                <controller id="P81-aL-kcZ">
-                    <items>
-                        <label width="121" alignment="left" text="Post-Workout Meditation" textAlignment="center" numberOfLines="4" id="7Ka-Ig-gRe"/>
-                    </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="285" y="99"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ylZ-Wj-Q3t">
-            <objects>
-                <controller id="oqX-Oq-ktY" customClass="NotificationController" customModule="Watch_Extension">
-                    <items>
-                        <label width="121" alignment="left" text="Post-Workout Meditation" textAlignment="center" numberOfLines="4" id="rJK-hE-XCd"/>
-                        <button width="1" alignment="left" title="Access Meditation" id="kb3-dE-CTN">
-                            <color key="backgroundColor" red="1" green="0.69411764710000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </button>
-                    </items>
-                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="285" y="-201"/>
+            <point key="canvasLocation" x="-588" y="532"/>
         </scene>
         <!--Wireframe3-->
         <scene sceneID="30c-ja-Cym">
@@ -135,37 +95,69 @@
                     <items>
                         <button width="1" alignment="left" title="Relationship" id="4ub-AJ-bjg">
                             <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zwx-7r-Hdf" kind="push" id="5Ya-Dw-ySC"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Sleep" id="SGb-qf-KEd">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zwx-7r-Hdf" kind="push" id="CDa-PZ-2z2"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Awareness" id="jwL-6Y-2ah">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zwx-7r-Hdf" kind="push" id="WJG-uY-DZ6"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Focus" id="85b-gi-cMN">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zwx-7r-Hdf" kind="push" id="dYy-MW-V4J"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Responding" id="4Zy-ij-7y9">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zwx-7r-Hdf" kind="push" id="aNw-Ka-ABb"/>
+                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Stress" id="eCR-L7-6Ls">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zwx-7r-Hdf" kind="push" id="tzQ-CQ-DfW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Skip" id="HIx-en-AHO">
+                            <connections>
+                                <segue destination="CKk-Lt-VhN" kind="push" id="pXM-Gy-yvj"/>
+                            </connections>
                         </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-15" y="466"/>
+            <point key="canvasLocation" x="-298" y="258"/>
         </scene>
         <!--Wireframe7-->
         <scene sceneID="fN7-4R-q6z">
             <objects>
                 <controller identifier="Wireframe7" id="CKk-Lt-VhN">
                     <items>
-                        <nowPlayingView alignment="left" id="KwW-EU-BbI"/>
+                        <group width="1" height="150" alignment="left" id="gKN-kg-gmW">
+                            <items>
+                                <nowPlayingView alignment="left" id="KwW-EU-BbI"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Finish" id="7Fa-Hb-sbr">
+                            <connections>
+                                <segue destination="2uq-5L-aos" kind="push" id="EOt-R6-Qbc"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="306" y="419"/>
+            <point key="canvasLocation" x="326" y="419"/>
         </scene>
         <!--Streak-->
         <scene sceneID="7Wy-B5-uQL">
@@ -178,38 +170,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-8" y="822"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="lET-i9-LsO">
-            <objects>
-                <controller id="igM-Mf-17x">
-                    <items>
-                        <table alignment="left" id="RcF-9l-ulU">
-                            <items>
-                                <tableRow id="TUv-BW-T7u">
-                                    <group key="rootItem" width="1" alignment="left" id="Mt8-1r-TGd">
-                                        <items>
-                                            <label alignment="left" text="Label" id="hkj-xM-e8J"/>
-                                            <label alignment="left" text="Test" id="62P-Uv-5gr"/>
-                                        </items>
-                                        <gestureRecognizers>
-                                            <tapGestureRecognizer id="jf4-EJ-qsz"/>
-                                        </gestureRecognizers>
-                                    </group>
-                                </tableRow>
-                                <tableRow id="Ish-sm-man">
-                                    <group key="rootItem" width="1" alignment="left" id="lK6-W4-8PR"/>
-                                </tableRow>
-                                <tableRow id="c1P-bh-J4H">
-                                    <group key="rootItem" width="1" alignment="left" id="OC8-Cx-n9v"/>
-                                </tableRow>
-                            </items>
-                        </table>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="320" y="808"/>
+            <point key="canvasLocation" x="836" y="937"/>
         </scene>
         <!--MoodTracker-->
         <scene sceneID="z7f-NI-4bC">
@@ -220,6 +181,9 @@
                             <items>
                                 <button width="1" height="1" alignment="left" title="Never" id="UIq-m0-kgh">
                                     <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="kjw-F8-00Z"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -227,6 +191,9 @@
                             <items>
                                 <button width="1" height="1" alignment="left" title="Rarely" id="FJ1-DZ-Kwc">
                                     <color key="backgroundColor" red="0.95294117647058818" green="0.65669266636449097" blue="0.14953330647327423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="qbm-36-tex"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -234,6 +201,9 @@
                             <items>
                                 <button width="1" height="1" alignment="left" title="Sometimes" id="jCz-HM-hYe">
                                     <color key="backgroundColor" red="0.92062097099113616" green="0.86562353109051848" blue="0.2032052654109589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="nNU-ML-qDI"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -241,6 +211,9 @@
                             <items>
                                 <button width="1" height="1" alignment="left" title="Often" id="w8v-Jm-YrO">
                                     <color key="backgroundColor" red="0.67843137249999996" green="0.86666666670000003" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="o19-Kz-HDw"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -248,12 +221,133 @@
                             <items>
                                 <button width="1" height="1" alignment="left" title="Always" id="kGq-DX-eU1">
                                     <color key="backgroundColor" red="0.3819576996038142" green="0.7362211044520548" blue="0.39356197958635508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="3lx-Je-2dj"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="82" y="398"/>
+        </scene>
+        <!--PostMedWireframe3-->
+        <scene sceneID="SiP-Kd-Qvn">
+            <objects>
+                <controller identifier="PostMedWireframe3" title="PostMedWireframe3" id="2uq-5L-aos">
+                    <items>
+                        <button width="1" alignment="left" title="Relationship" id="vXl-Gw-of1">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="LXf-AZ-Brd" kind="push" id="DtG-gd-vJC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Sleep" id="nHC-mI-zyQ">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="LXf-AZ-Brd" kind="push" id="pBS-ik-DDm"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Awareness" id="Dvh-PZ-rmL">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="LXf-AZ-Brd" kind="push" id="Woo-Pd-ciM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Focus" id="wNo-Zd-acz">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="LXf-AZ-Brd" kind="push" id="LWE-f1-HRM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Responding" id="tpl-hv-ckK">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="LXf-AZ-Brd" kind="push" id="gnC-bl-vAj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Stress" id="p3x-ts-zv3">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="LXf-AZ-Brd" kind="push" id="hk4-h8-rby"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Finish" id="iEp-Og-bna">
+                            <connections>
+                                <segue destination="KAs-Am-ol8" kind="push" id="Wgk-Um-xxT"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="612" y="498"/>
+        </scene>
+        <!--PostMedMoodTracker-->
+        <scene sceneID="f3P-3c-3XU">
+            <objects>
+                <controller identifier="PostMedMoodTracker" title="PostMedMoodTracker" id="LXf-AZ-Brd">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="QzY-kC-sF4">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Never" id="V21-cT-FqE">
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="2uq-5L-aos" kind="push" id="1Ru-Rj-Q9f"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="Vlo-Kb-kFl">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Rarely" id="dTX-Zs-vz2">
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.65669266640000001" blue="0.14953330649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="2uq-5L-aos" kind="push" id="5o5-7R-nJk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="f1L-Sh-kYI">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Sometimes" id="MeJ-PG-vew">
+                                    <color key="backgroundColor" red="0.92062097099999995" green="0.86562353110000001" blue="0.2032052654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="2uq-5L-aos" kind="push" id="iTY-ZN-qBd"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="MRy-Im-edB">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Often" id="EC4-Og-FqB">
+                                    <color key="backgroundColor" red="0.67843137249999996" green="0.86666666670000003" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="2uq-5L-aos" kind="push" id="s2H-5g-mKY"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="2Rl-5B-Y2b">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Always" id="aYW-JQ-1O5">
+                                    <color key="backgroundColor" red="0.38195769959999998" green="0.7362211045" blue="0.3935619796" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="2uq-5L-aos" kind="push" id="K28-77-Pmh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="879" y="444"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gnC-bl-vAj"/>
+        <segue reference="EOt-R6-Qbc"/>
+        <segue reference="5Ya-Dw-ySC"/>
+        <segue reference="kjw-F8-00Z"/>
+    </inferredMetricsTieBreakers>
 </document>

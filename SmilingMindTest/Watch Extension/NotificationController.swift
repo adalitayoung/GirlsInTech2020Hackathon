@@ -16,6 +16,16 @@ class NotificationController: WKUserNotificationInterfaceController {
         super.init()
         
         // Configure interface objects here.
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            
+            if let error = error {
+                // Handle the error here.
+                print(error)
+            }
+            print("approved")
+            // Enable or disable features based on the authorization.
+        }
     }
 
     override func willActivate() {
