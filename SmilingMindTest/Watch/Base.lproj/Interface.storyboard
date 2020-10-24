@@ -2,21 +2,87 @@
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Meditation Selector-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                <controller identifier="Meditation Selector" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
                     <items>
-                        <label width="136" height="85" alignment="left" text="Flip a coin" id="n4J-2Z-e3i"/>
-                        <button width="1" alignment="left" title="Flip" id="D4V-PG-U4R"/>
+                        <label alignment="left" id="6tZ-pG-TcC"/>
+                        <table alignment="left" id="4AP-cl-IcF">
+                            <items>
+                                <tableRow id="9z3-uA-vEL">
+                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="g4J-kL-uzK">
+                                        <items>
+                                            <label height="21" alignment="left" text="Digital Detox" textAlignment="left" baselineAdjustment="alignCenters" id="Di6-6m-aK6">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                            </label>
+                                            <label height="14" alignment="left" text="2 Modules, 8 Sessions" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="B8r-9T-iiP">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <gestureRecognizers>
+                                            <tapGestureRecognizer id="zmt-a1-PZv"/>
+                                        </gestureRecognizers>
+                                        <color key="backgroundColor" red="0.49035704135894775" green="0.29665118455886841" blue="0.45337533950805664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="QaD-UX-ysC">
+                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="ZV0-1j-aBp">
+                                        <items>
+                                            <label height="21" alignment="left" text="Small Business" textAlignment="left" baselineAdjustment="alignCenters" id="ZHf-ld-TJG">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                            </label>
+                                            <label height="14" alignment="left" text="5 Modules, 13 Sessions" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="Lb5-Nq-gBJ">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <gestureRecognizers>
+                                            <tapGestureRecognizer id="MZy-wd-naD"/>
+                                        </gestureRecognizers>
+                                        <color key="backgroundColor" red="0.54087144136428833" green="0.33639824390411377" blue="0.47577387094497681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="HW9-Tk-a0h">
+                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="Bja-xe-ZjB">
+                                        <items>
+                                            <label height="21" alignment="left" text="Stress Management" textAlignment="left" baselineAdjustment="alignCenters" id="Lj6-lI-v1s">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                            </label>
+                                            <label height="14" alignment="left" text="4 Modules, 10 Sessions" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="cnq-kJ-FmU">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <gestureRecognizers>
+                                            <tapGestureRecognizer id="EDO-Jh-XLK"/>
+                                        </gestureRecognizers>
+                                        <color key="backgroundColor" red="0.64206022024154663" green="0.42010593414306641" blue="0.49857157468795776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="OHl-a3-kPA">
+                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="pkm-Ld-9o0">
+                                        <items>
+                                            <label height="21" alignment="left" text="Walking Meditation" textAlignment="left" baselineAdjustment="alignCenters" id="dyV-cD-pFI">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
+                                            </label>
+                                            <label height="14" alignment="left" text="1 Module, 2 Sessions" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="kzQ-G7-TrQ">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <gestureRecognizers>
+                                            <tapGestureRecognizer id="LHw-8t-uLO"/>
+                                        </gestureRecognizers>
+                                        <color key="backgroundColor" red="0.71607106924057007" green="0.48357433080673218" blue="0.522541344165802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="W1r-Up-3ih">
@@ -188,7 +254,6 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="39" y="39"/>
         </scene>
     </scenes>
 </document>
