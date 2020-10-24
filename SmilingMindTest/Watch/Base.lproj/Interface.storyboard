@@ -83,7 +83,177 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="W1r-Up-3ih">
+            <objects>
+                <notificationController id="K8L-2h-lGf">
+                    <items>
+                        <label width="121" alignment="left" text="Post-Workout Meditation" numberOfLines="4" id="aiB-KG-l8d"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="PostExerciseMeditationNotification" id="Gwf-Zu-whW"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="aiB-KG-l8d" id="lwa-JL-C1R"/>
+                        <segue destination="P81-aL-kcZ" kind="relationship" relationship="dynamicNotificationInterface" id="2lg-dz-2he"/>
+                        <segue destination="oqX-Oq-ktY" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="hRS-Kd-H63"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-15" y="99"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="rq3-rt-JF4">
+            <objects>
+                <controller id="P81-aL-kcZ">
+                    <items>
+                        <label width="121" alignment="left" text="Post-Workout Meditation" textAlignment="center" numberOfLines="4" id="7Ka-Ig-gRe"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="99"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ylZ-Wj-Q3t">
+            <objects>
+                <controller id="oqX-Oq-ktY" customClass="NotificationController" customModule="Watch_Extension">
+                    <items>
+                        <label width="121" alignment="left" text="Post-Workout Meditation" textAlignment="center" numberOfLines="4" id="rJK-hE-XCd"/>
+                        <button width="1" alignment="left" title="Access Meditation" id="kb3-dE-CTN">
+                            <color key="backgroundColor" red="1" green="0.69411764710000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="-201"/>
+        </scene>
+        <!--Wireframe3-->
+        <scene sceneID="30c-ja-Cym">
+            <objects>
+                <controller identifier="Wireframe3" id="CM5-L8-Vid">
+                    <items>
+                        <button width="1" alignment="left" title="Relationship" id="4ub-AJ-bjg">
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Sleep" id="SGb-qf-KEd">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Awareness" id="jwL-6Y-2ah">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Focus" id="85b-gi-cMN">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Responding" id="4Zy-ij-7y9">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Stress" id="eCR-L7-6Ls">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-15" y="466"/>
+        </scene>
+        <!--Wireframe7-->
+        <scene sceneID="fN7-4R-q6z">
+            <objects>
+                <controller identifier="Wireframe7" id="CKk-Lt-VhN">
+                    <items>
+                        <nowPlayingView alignment="left" id="KwW-EU-BbI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="306" y="419"/>
+        </scene>
+        <!--Streak-->
+        <scene sceneID="7Wy-B5-uQL">
+            <objects>
+                <controller identifier="Streak" id="KAs-Am-ol8">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="36 Days" textAlignment="center" numberOfLines="2" id="zXH-Bw-JfC">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-8" y="822"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="lET-i9-LsO">
+            <objects>
+                <controller id="igM-Mf-17x">
+                    <items>
+                        <table alignment="left" id="RcF-9l-ulU">
+                            <items>
+                                <tableRow id="TUv-BW-T7u">
+                                    <group key="rootItem" width="1" alignment="left" id="Mt8-1r-TGd">
+                                        <items>
+                                            <label alignment="left" text="Label" id="hkj-xM-e8J"/>
+                                            <label alignment="left" text="Test" id="62P-Uv-5gr"/>
+                                        </items>
+                                        <gestureRecognizers>
+                                            <tapGestureRecognizer id="jf4-EJ-qsz"/>
+                                        </gestureRecognizers>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="Ish-sm-man">
+                                    <group key="rootItem" width="1" alignment="left" id="lK6-W4-8PR"/>
+                                </tableRow>
+                                <tableRow id="c1P-bh-J4H">
+                                    <group key="rootItem" width="1" alignment="left" id="OC8-Cx-n9v"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="320" y="808"/>
+        </scene>
+        <!--MoodTracker-->
+        <scene sceneID="z7f-NI-4bC">
+            <objects>
+                <controller identifier="MoodTracker" title="MoodTracker" id="Zwx-7r-Hdf">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="m0O-Y1-QiX">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Never" id="UIq-m0-kgh">
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="cT8-oq-yHo">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Rarely" id="FJ1-DZ-Kwc">
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.65669266636449097" blue="0.14953330647327423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="0tV-Ih-KxI">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Sometimes" id="jCz-HM-hYe">
+                                    <color key="backgroundColor" red="0.92062097099113616" green="0.86562353109051848" blue="0.2032052654109589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="NwX-3q-bwl">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Often" id="w8v-Jm-YrO">
+                                    <color key="backgroundColor" red="0.67843137249999996" green="0.86666666670000003" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="9IB-6E-jvb">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Always" id="kGq-DX-eU1">
+                                    <color key="backgroundColor" red="0.3819576996038142" green="0.7362211044520548" blue="0.39356197958635508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
         </scene>
     </scenes>
 </document>
