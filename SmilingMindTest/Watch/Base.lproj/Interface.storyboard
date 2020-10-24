@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CM5-L8-Vid">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -87,7 +87,7 @@
         <!--Static Notification Interface Controller-->
         <scene sceneID="W1r-Up-3ih">
             <objects>
-                <notificationController id="K8L-2h-lGf">
+                <notificationController id="K8L-2h-lGf" customClass="NotificationController" customModule="Watch_Extension">
                     <items>
                         <label width="121" alignment="left" text="Post-Workout Meditation" numberOfLines="4" id="aiB-KG-l8d"/>
                     </items>
