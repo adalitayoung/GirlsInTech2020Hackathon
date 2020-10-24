@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="85" alignment="left" text="Flip a coin" id="n4J-2Z-e3i"/>
+                        <button width="1" alignment="left" title="Flip" id="D4V-PG-U4R"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="W1r-Up-3ih">
             <objects>
@@ -132,6 +144,51 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="320" y="808"/>
+        </scene>
+        <!--MoodTracker-->
+        <scene sceneID="z7f-NI-4bC">
+            <objects>
+                <controller identifier="MoodTracker" title="MoodTracker" id="Zwx-7r-Hdf">
+                    <items>
+                        <group width="1" height="27" alignment="left" id="m0O-Y1-QiX">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Never" id="UIq-m0-kgh">
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="cT8-oq-yHo">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Rarely" id="FJ1-DZ-Kwc">
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.65669266636449097" blue="0.14953330647327423" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="0tV-Ih-KxI">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Sometimes" id="jCz-HM-hYe">
+                                    <color key="backgroundColor" red="0.92062097099113616" green="0.86562353109051848" blue="0.2032052654109589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="NwX-3q-bwl">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Often" id="w8v-Jm-YrO">
+                                    <color key="backgroundColor" red="0.67843137249999996" green="0.86666666670000003" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="9IB-6E-jvb">
+                            <items>
+                                <button width="1" height="1" alignment="left" title="Always" id="kGq-DX-eU1">
+                                    <color key="backgroundColor" red="0.3819576996038142" green="0.7362211044520548" blue="0.39356197958635508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="39" y="39"/>
         </scene>
     </scenes>
 </document>
