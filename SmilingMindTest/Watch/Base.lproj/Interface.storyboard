@@ -1,47 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
         <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
+        <scene sceneID="W1r-Up-3ih">
             <objects>
-                <notificationController id="YCC-NB-fut">
+                <notificationController id="K8L-2h-lGf">
                     <items>
-                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                        <label width="121" alignment="left" text="Post-Workout Meditation" numberOfLines="4" id="aiB-KG-l8d"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="PostExerciseMeditationNotification" id="Gwf-Zu-whW"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
-                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                        <outlet property="notificationAlertLabel" destination="aiB-KG-l8d" id="lwa-JL-C1R"/>
+                        <segue destination="P81-aL-kcZ" kind="relationship" relationship="dynamicNotificationInterface" id="2lg-dz-2he"/>
+                        <segue destination="oqX-Oq-ktY" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="hRS-Kd-H63"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="-15" y="99"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="rq3-rt-JF4">
+            <objects>
+                <controller id="P81-aL-kcZ">
+                    <items>
+                        <label width="121" alignment="left" text="Post-Workout Meditation" textAlignment="center" numberOfLines="4" id="7Ka-Ig-gRe"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="99"/>
         </scene>
         <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
+        <scene sceneID="ylZ-Wj-Q3t">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="oqX-Oq-ktY" customClass="NotificationController" customModule="Watch_Extension">
+                    <items>
+                        <label width="121" alignment="left" text="Post-Workout Meditation" textAlignment="center" numberOfLines="4" id="rJK-hE-XCd"/>
+                        <button width="1" alignment="left" title="Access Meditation" id="kb3-dE-CTN">
+                            <color key="backgroundColor" red="1" green="0.69411764710000001" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="285" y="-201"/>
         </scene>
-        <!--Notification Controller-->
-        <scene sceneID="Niz-AI-uX2">
+        <!--Wireframe3-->
+        <scene sceneID="30c-ja-Cym">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller identifier="Wireframe3" id="CM5-L8-Vid">
+                    <items>
+                        <button width="1" alignment="left" title="Relationship" id="4ub-AJ-bjg">
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Sleep" id="SGb-qf-KEd">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Awareness" id="jwL-6Y-2ah">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Focus" id="85b-gi-cMN">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Responding" id="4Zy-ij-7y9">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="Stress" id="eCR-L7-6Ls">
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="-15" y="466"/>
+        </scene>
+        <!--Wireframe7-->
+        <scene sceneID="fN7-4R-q6z">
+            <objects>
+                <controller identifier="Wireframe7" id="CKk-Lt-VhN">
+                    <items>
+                        <nowPlayingView alignment="left" id="KwW-EU-BbI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="306" y="419"/>
+        </scene>
+        <!--Streak-->
+        <scene sceneID="7Wy-B5-uQL">
+            <objects>
+                <controller identifier="Streak" id="KAs-Am-ol8">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="36 Days" textAlignment="center" numberOfLines="2" id="zXH-Bw-JfC">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-8" y="822"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="lET-i9-LsO">
+            <objects>
+                <controller id="igM-Mf-17x">
+                    <items>
+                        <table alignment="left" id="RcF-9l-ulU">
+                            <items>
+                                <tableRow id="TUv-BW-T7u">
+                                    <group key="rootItem" width="1" alignment="left" id="Mt8-1r-TGd">
+                                        <items>
+                                            <label alignment="left" text="Label" id="hkj-xM-e8J"/>
+                                            <label alignment="left" text="Test" id="62P-Uv-5gr"/>
+                                        </items>
+                                        <gestureRecognizers>
+                                            <tapGestureRecognizer id="jf4-EJ-qsz"/>
+                                        </gestureRecognizers>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="Ish-sm-man">
+                                    <group key="rootItem" width="1" alignment="left" id="lK6-W4-8PR"/>
+                                </tableRow>
+                                <tableRow id="c1P-bh-J4H">
+                                    <group key="rootItem" width="1" alignment="left" id="OC8-Cx-n9v"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="320" y="808"/>
         </scene>
     </scenes>
 </document>

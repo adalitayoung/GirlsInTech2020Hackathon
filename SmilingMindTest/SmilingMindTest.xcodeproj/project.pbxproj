@@ -22,6 +22,7 @@
 		387746812543D6710066EC39 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387746802543D6710066EC39 /* ComplicationController.swift */; };
 		387746832543D6720066EC39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387746822543D6720066EC39 /* Assets.xcassets */; };
 		387746882543D6720066EC39 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 387746692543D66E0066EC39 /* Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3877469B2543D95E0066EC39 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3877469A2543D95E0066EC39 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,9 @@
 		387746822543D6720066EC39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		387746842543D6720066EC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		387746852543D6720066EC39 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		387746982543D9260066EC39 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		387746992543D95D0066EC39 /* SmilingMindTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmilingMindTest.entitlements; sourceTree = "<group>"; };
+		3877469A2543D95E0066EC39 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3877469B2543D95E0066EC39 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +119,7 @@
 				3877466A2543D66E0066EC39 /* Watch */,
 				387746792543D6710066EC39 /* Watch Extension */,
 				387746502543D6450066EC39 /* Products */,
+				387746972543D9260066EC39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +136,7 @@
 		387746512543D6450066EC39 /* SmilingMindTest */ = {
 			isa = PBXGroup;
 			children = (
+				387746992543D95D0066EC39 /* SmilingMindTest.entitlements */,
 				387746522543D6450066EC39 /* AppDelegate.swift */,
 				387746542543D6450066EC39 /* SceneDelegate.swift */,
 				387746562543D6450066EC39 /* ViewController.swift */,
@@ -163,6 +170,15 @@
 				387746852543D6720066EC39 /* PushNotificationPayload.apns */,
 			);
 			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		387746972543D9260066EC39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3877469A2543D95E0066EC39 /* HealthKit.framework */,
+				387746982543D9260066EC39 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmilingMindTest/SmilingMindTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SmilingMindTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmilingMindTest/SmilingMindTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SmilingMindTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
