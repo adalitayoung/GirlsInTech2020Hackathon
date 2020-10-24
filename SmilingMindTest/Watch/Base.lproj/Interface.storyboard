@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CM5-L8-Vid">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
-            <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
-                    <items>
-                        <label width="136" height="85" alignment="left" text="Flip a coin" id="n4J-2Z-e3i"/>
-                        <button width="1" alignment="left" title="Flip" id="D4V-PG-U4R"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="W1r-Up-3ih">
             <objects>
-                <notificationController id="K8L-2h-lGf">
+                <notificationController id="K8L-2h-lGf" customClass="NotificationController" customModule="Watch_Extension">
                     <items>
                         <label width="121" alignment="left" text="Post-Workout Meditation" numberOfLines="4" id="aiB-KG-l8d"/>
                     </items>
@@ -188,7 +176,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="39" y="39"/>
+            <point key="canvasLocation" x="-72" y="-235"/>
         </scene>
     </scenes>
 </document>
