@@ -180,7 +180,7 @@
         <!--MoodTracker-->
         <scene sceneID="z7f-NI-4bC">
             <objects>
-                <controller identifier="MoodTracker" title="MoodTracker" id="Zwx-7r-Hdf">
+                <controller identifier="MoodTracker" id="Zwx-7r-Hdf">
                     <items>
                         <group width="1" height="27" alignment="left" id="m0O-Y1-QiX">
                             <items>
@@ -240,7 +240,7 @@
         <!--PostMedWireframe3-->
         <scene sceneID="SiP-Kd-Qvn">
             <objects>
-                <controller identifier="PostMedWireframe3" title="PostMedWireframe3" id="2uq-5L-aos">
+                <controller identifier="PostMedWireframe3" id="2uq-5L-aos">
                     <items>
                         <button width="1" alignment="left" title="Relationship" id="vXl-Gw-of1">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -279,7 +279,7 @@
         <!--PostMedMoodTracker-->
         <scene sceneID="f3P-3c-3XU">
             <objects>
-                <controller identifier="PostMedMoodTracker" title="PostMedMoodTracker" id="LXf-AZ-Brd">
+                <controller identifier="PostMedMoodTracker" id="LXf-AZ-Brd">
                     <items>
                         <group width="1" height="27" alignment="left" id="QzY-kC-sF4">
                             <items>
@@ -445,14 +445,15 @@
     <inferredMetricsTieBreakers>
         <segue reference="n5b-Hj-bgR"/>
         <segue reference="xVd-8V-7Hc"/>
-        <segue reference="659-jT-4PQ"/>
+        <segue reference="Tc2-io-twH"/>
         <segue reference="alo-14-hTH"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" name="AccentColor"/>
     <resources>
         <image name="SmilingMindIcon" width="113" height="110"/>
         <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
-            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.34299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="1" green="0.61960784313725492" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
