@@ -110,25 +110,29 @@
             </objects>
             <point key="canvasLocation" x="-298" y="258"/>
         </scene>
-        <!--Wireframe7-->
+        <!--Meditation Player-->
         <scene sceneID="fN7-4R-q6z">
             <objects>
-                <controller identifier="Wireframe7" id="CKk-Lt-VhN">
+                <controller identifier="Meditation Player" id="CKk-Lt-VhN" customClass="MeditationPlayerController" customModule="Watch_Extension">
                     <items>
-                        <group width="1" height="150" alignment="left" id="gKN-kg-gmW">
-                            <items>
-                                <nowPlayingView alignment="left" id="KwW-EU-BbI"/>
-                            </items>
-                        </group>
-                        <button width="1" alignment="left" title="Finish" id="7Fa-Hb-sbr">
+                        <group width="100" height="90" alignment="center" backgroundImage="play.circle.fill" catalog="system" id="eSt-Aq-6u0"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Play" id="ypg-Zk-bad">
                             <connections>
-                                <segue destination="2uq-5L-aos" kind="push" id="EOt-R6-Qbc"/>
+                                <action selector="Play" destination="CKk-Lt-VhN" id="J5T-Wq-ET9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="F0P-b6-fnJ">
+                            <connections>
+                                <segue destination="2uq-5L-aos" kind="push" id="xVd-8V-7Hc"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="PlayButton" destination="ypg-Zk-bad" id="wFu-02-8mW"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="326" y="419"/>
+            <point key="canvasLocation" x="209" y="887"/>
         </scene>
         <!--Streak-->
         <scene sceneID="7Wy-B5-uQL">
@@ -384,7 +388,7 @@
             <objects>
                 <controller id="xhi-83-MdQ">
                     <items>
-                        <label width="136" alignment="left" text="Welcome" textAlignment="center" numberOfLines="3" id="rvk-s7-Ry9"/>
+                        <label width="136" alignment="center" text="Welcome" textAlignment="center" numberOfLines="3" id="rvk-s7-Ry9"/>
                         <button width="1" alignment="left" title="Start Meditation" id="naW-cO-Dnd">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -407,7 +411,7 @@
             <objects>
                 <controller identifier="StatsController" id="WoJ-bc-Q6X">
                     <items>
-                        <label width="136" alignment="left" text="Programs Completed This Month" textAlignment="center" numberOfLines="3" id="6cD-NW-Cbp">
+                        <label width="136" alignment="center" text="Programs Completed This Month" textAlignment="center" numberOfLines="3" id="6cD-NW-Cbp">
                             <color key="textColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
@@ -426,9 +430,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="y3R-BE-ReC"/>
-        <segue reference="EOt-R6-Qbc"/>
+        <segue reference="n5b-Hj-bgR"/>
+        <segue reference="xVd-8V-7Hc"/>
         <segue reference="659-jT-4PQ"/>
-        <segue reference="TfE-No-JuW"/>
+        <segue reference="alo-14-hTH"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
