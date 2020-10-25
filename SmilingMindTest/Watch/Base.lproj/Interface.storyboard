@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc" pageOrientation="vertical">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
     </dependencies>
     <scenes>
         <!--Meditation Selector-->
@@ -117,12 +117,16 @@
         <!--Streak-->
         <scene sceneID="7Wy-B5-uQL">
             <objects>
-                <controller identifier="Streak" id="KAs-Am-ol8">
+                <controller identifier="Streak" backgroundImage="star.fill" catalog="system" contentMode="scaleAspectFit" animationDuration="3" id="KAs-Am-ol8">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="36 Days" textAlignment="center" numberOfLines="2" id="zXH-Bw-JfC">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        <label height="30" alignment="center" verticalAlignment="center" semanticContentAttribute="spatial" text="36" textAlignment="right" baselineAdjustment="alignCenters" numberOfLines="0" id="zXH-Bw-JfC">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="30"/>
+                        </label>
+                        <label height="17" alignment="center" verticalAlignment="center" text="days" id="Jcs-ei-ukq">
+                            <fontDescription key="font" type="system" pointSize="14"/>
                         </label>
                     </items>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="836" y="937"/>
@@ -318,4 +322,11 @@
         <segue reference="EOt-R6-Qbc"/>
         <segue reference="TfE-No-JuW"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" name="AccentColor"/>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="0.9252360463" green="0.40372699499999998" blue="0.3430250883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
