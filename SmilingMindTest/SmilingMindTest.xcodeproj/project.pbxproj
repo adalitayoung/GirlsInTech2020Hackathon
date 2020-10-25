@@ -23,6 +23,9 @@
 		387746832543D6720066EC39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387746822543D6720066EC39 /* Assets.xcassets */; };
 		387746882543D6720066EC39 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 387746692543D66E0066EC39 /* Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3877469B2543D95E0066EC39 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3877469A2543D95E0066EC39 /* HealthKit.framework */; };
+		7A0D7D072544E9570094DA94 /* MeditationPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D7D062544E9570094DA94 /* MeditationPlayerController.swift */; };
+		7A0D7D0C2544EF840094DA94 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D7D0B2544EF840094DA94 /* Sound.swift */; };
+		7A90B1CC2544F1D300E4D673 /* 252.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A90B1CB2544F1D300E4D673 /* 252.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		387746982543D9260066EC39 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		387746992543D95D0066EC39 /* SmilingMindTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmilingMindTest.entitlements; sourceTree = "<group>"; };
 		3877469A2543D95E0066EC39 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		7A0D7D062544E9570094DA94 /* MeditationPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationPlayerController.swift; sourceTree = "<group>"; };
+		7A0D7D0B2544EF840094DA94 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		7A90B1CB2544F1D300E4D673 /* 252.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 252.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		387746792543D6710066EC39 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7A90B1CB2544F1D300E4D673 /* 252.mp3 */,
 				3877467A2543D6710066EC39 /* InterfaceController.swift */,
 				3877467C2543D6710066EC39 /* ExtensionDelegate.swift */,
 				3877467E2543D6710066EC39 /* NotificationController.swift */,
@@ -168,6 +175,9 @@
 				387746822543D6720066EC39 /* Assets.xcassets */,
 				387746842543D6720066EC39 /* Info.plist */,
 				387746852543D6720066EC39 /* PushNotificationPayload.apns */,
+				7A0D7D062544E9570094DA94 /* MeditationPlayerController.swift */,
+				7A0D7D0B2544EF840094DA94 /* Sound.swift */,
+				7A90B1CA2544F1D300E4D673 /* Audio */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -179,6 +189,13 @@
 				387746982543D9260066EC39 /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A90B1CA2544F1D300E4D673 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A90B1CC2544F1D300E4D673 /* 252.mp3 in Resources */,
 				387746832543D6720066EC39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +341,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3877467F2543D6710066EC39 /* NotificationController.swift in Sources */,
+				7A0D7D0C2544EF840094DA94 /* Sound.swift in Sources */,
 				387746812543D6710066EC39 /* ComplicationController.swift in Sources */,
+				7A0D7D072544E9570094DA94 /* MeditationPlayerController.swift in Sources */,
 				3877467D2543D6710066EC39 /* ExtensionDelegate.swift in Sources */,
 				3877467B2543D6710066EC39 /* InterfaceController.swift in Sources */,
 			);

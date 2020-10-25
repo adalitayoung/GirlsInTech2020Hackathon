@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CM5-L8-Vid">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CKk-Lt-VhN">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
         <!--Meditation Selector-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Meditation Selector" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                <controller identifier="Meditation Selector" fullBounds="YES" id="AgC-eL-Hgc" customClass="WKUserNotificationInterfaceController">
                     <items>
                         <label alignment="left" id="6tZ-pG-TcC"/>
                         <table alignment="left" id="4AP-cl-IcF">
@@ -28,6 +28,9 @@
                                             <tapGestureRecognizer id="zmt-a1-PZv"/>
                                         </gestureRecognizers>
                                         <color key="backgroundColor" red="0.49035704135894775" green="0.29665118455886841" blue="0.45337533950805664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="CM5-L8-Vid" kind="push" id="Uyz-Iu-nlN"/>
+                                        </connections>
                                     </group>
                                 </tableRow>
                                 <tableRow id="QaD-UX-ysC">
@@ -83,6 +86,7 @@
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="-396" y="-169"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="W1r-Up-3ih">
@@ -100,7 +104,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="-15" y="99"/>
+            <point key="canvasLocation" x="-73" y="216"/>
         </scene>
         <!--Dynamic Notification Interface Controller-->
         <scene sceneID="rq3-rt-JF4">
@@ -111,7 +115,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="285" y="99"/>
+            <point key="canvasLocation" x="329" y="188"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ylZ-Wj-Q3t">
@@ -126,7 +130,7 @@
                     <color key="backgroundColor" red="0.95294117649999999" green="0.40784313729999999" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="285" y="-201"/>
+            <point key="canvasLocation" x="566" y="22"/>
         </scene>
         <!--Wireframe3-->
         <scene sceneID="30c-ja-Cym">
@@ -151,21 +155,30 @@
                         <button width="1" alignment="left" title="Stress" id="eCR-L7-6Ls">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </button>
+                        <button width="1" alignment="left" title="Skip" id="4xM-8R-zrg"/>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-15" y="466"/>
+            <point key="canvasLocation" x="14" y="-196"/>
         </scene>
-        <!--Wireframe7-->
+        <!--Meditation Player-->
         <scene sceneID="fN7-4R-q6z">
             <objects>
-                <controller identifier="Wireframe7" id="CKk-Lt-VhN">
+                <controller identifier="Meditation Player" id="CKk-Lt-VhN" customClass="MeditationPlayerController" customModule="Watch_Extension">
                     <items>
-                        <nowPlayingView alignment="left" id="KwW-EU-BbI"/>
+                        <group width="100" height="90" alignment="center" backgroundImage="play.circle.fill" catalog="system" id="eSt-Aq-6u0"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Play" id="ypg-Zk-bad">
+                            <connections>
+                                <action selector="Play" destination="CKk-Lt-VhN" id="J5T-Wq-ET9"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="PlayButton" destination="ypg-Zk-bad" id="wFu-02-8mW"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="306" y="419"/>
+            <point key="canvasLocation" x="200" y="506"/>
         </scene>
         <!--Streak-->
         <scene sceneID="7Wy-B5-uQL">
@@ -254,6 +267,10 @@
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="306" y="-243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
