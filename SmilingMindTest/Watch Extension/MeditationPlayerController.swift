@@ -35,4 +35,7 @@ class MeditationPlayerController: WKInterfaceController, Sound {
     
     }
     
+    @IBAction func Stop() {
+        stop(named:"252")
+    }
 }

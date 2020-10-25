@@ -19,4 +19,9 @@ extension Sound {
         try? audioPlayer = AVAudioPlayer(contentsOf: url)
         audioPlayer?.play()
     }
+    
+    func stop(named name: String) {
+          audioPlayer?.stop()
+          audioPlayer = nil
+    }
 }

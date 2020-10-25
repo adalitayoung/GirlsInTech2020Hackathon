@@ -2,8 +2,8 @@
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xhi-83-MdQ">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17034"/>
     </dependencies>
     <scenes>
         <!--Meditation Selector-->
@@ -121,6 +121,11 @@
                                 <action selector="Play" destination="CKk-Lt-VhN" id="J5T-Wq-ET9"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Stop" id="taI-RN-ega">
+                            <connections>
+                                <action selector="Stop" destination="CKk-Lt-VhN" id="6EK-if-upj"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Next" id="F0P-b6-fnJ">
                             <connections>
                                 <segue destination="2uq-5L-aos" kind="push" id="xVd-8V-7Hc"/>
@@ -128,6 +133,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="NextButton" destination="F0P-b6-fnJ" id="5ad-kV-fxS"/>
                         <outlet property="PlayButton" destination="ypg-Zk-bad" id="wFu-02-8mW"/>
                     </connections>
                 </controller>
@@ -137,14 +143,15 @@
         <!--Streak-->
         <scene sceneID="7Wy-B5-uQL">
             <objects>
-                <controller identifier="Streak" backgroundImage="star.fill" catalog="system" contentMode="scaleAspectFit" animationDuration="3" id="KAs-Am-ol8">
+                <controller identifier="Streak" contentMode="scaleAspectFit" animationDuration="3" id="KAs-Am-ol8">
                     <items>
-                        <label height="30" alignment="center" verticalAlignment="center" semanticContentAttribute="spatial" text="36" textAlignment="right" baselineAdjustment="alignCenters" numberOfLines="0" id="zXH-Bw-JfC">
-                            <fontDescription key="font" type="system" weight="medium" pointSize="30"/>
+                        <label alignment="center" verticalAlignment="center" semanticContentAttribute="spatial" text="36" textAlignment="right" baselineAdjustment="alignCenters" numberOfLines="0" id="zXH-Bw-JfC">
+                            <fontDescription key="font" type="system" weight="medium" pointSize="60"/>
                         </label>
                         <label height="17" alignment="center" verticalAlignment="center" text="days" id="Jcs-ei-ukq">
                             <fontDescription key="font" type="system" pointSize="14"/>
                         </label>
+                        <imageView width="50" height="50" alignment="center" image="SmilingMindIcon" id="tG5-I0-fdb"/>
                     </items>
                     <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
                 </controller>
@@ -391,7 +398,10 @@
             <objects>
                 <controller id="xhi-83-MdQ">
                     <items>
-                        <label width="136" alignment="center" text="Welcome" textAlignment="center" numberOfLines="3" id="rvk-s7-Ry9"/>
+                        <imageView width="30" height="30" alignment="center" image="SmilingMindIcon" id="zVK-m5-I3V"/>
+                        <label width="136" alignment="center" text="Welcome" textAlignment="center" numberOfLines="3" id="rvk-s7-Ry9">
+                            <fontDescription key="font" type="boldSystem" pointSize="25"/>
+                        </label>
                         <button width="1" alignment="left" title="Start Meditation" id="naW-cO-Dnd">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -440,9 +450,10 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="AccentColor"/>
     <resources>
-        <image name="star.fill" catalog="system" width="128" height="115"/>
+        <image name="SmilingMindIcon" width="113" height="110"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
-            <color red="0.9252360463" green="0.40372699499999998" blue="0.3430250883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.92500001192092896" green="0.40400001406669617" blue="0.34299999475479126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
