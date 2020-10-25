@@ -2,8 +2,13 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "tvos",
-        "reference" : "systemTealColor"
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.343",
+          "green" : "0.404",
+          "red" : "0.925"
+        }
       },
       "idiom" : "universal"
     },
@@ -15,8 +20,13 @@
         }
       ],
       "color" : {
-        "platform" : "tvos",
-        "reference" : "systemTealColor"
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.343",
+          "green" : "0.404",
+          "red" : "0.925"
+        }
       },
       "idiom" : "universal"
     },
@@ -28,8 +38,13 @@
         }
       ],
       "color" : {
-        "platform" : "tvos",
-        "reference" : "systemTealColor"
+        "color-space" : "display-p3",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.343",
+          "green" : "0.404",
+          "red" : "0.925"
+        }
       },
       "idiom" : "universal"
     }
