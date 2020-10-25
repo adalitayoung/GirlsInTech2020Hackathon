@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CM5-L8-Vid">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -11,79 +11,52 @@
             <objects>
                 <controller identifier="Meditation Selector" hidesWhenLoading="NO" fullBounds="YES" id="AgC-eL-Hgc">
                     <items>
-                        <label alignment="left" id="6tZ-pG-TcC"/>
-                        <table alignment="left" id="4AP-cl-IcF">
+                        <group width="1" alignment="left" id="MsY-Ro-Brh">
                             <items>
-                                <tableRow id="9z3-uA-vEL">
-                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="g4J-kL-uzK">
-                                        <items>
-                                            <label height="21" alignment="left" text="Digital Detox" textAlignment="left" baselineAdjustment="alignCenters" id="Di6-6m-aK6">
-                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
-                                            </label>
-                                            <label height="14" alignment="left" text="2 Modules, 8 Sessions" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="B8r-9T-iiP">
-                                                <fontDescription key="font" type="system" pointSize="10"/>
-                                            </label>
-                                        </items>
-                                        <gestureRecognizers>
-                                            <tapGestureRecognizer id="zmt-a1-PZv"/>
-                                        </gestureRecognizers>
-                                        <color key="backgroundColor" red="0.49035704135894775" green="0.29665118455886841" blue="0.45337533950805664" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </group>
-                                </tableRow>
-                                <tableRow id="QaD-UX-ysC">
-                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="ZV0-1j-aBp">
-                                        <items>
-                                            <label height="21" alignment="left" text="Small Business" textAlignment="left" baselineAdjustment="alignCenters" id="ZHf-ld-TJG">
-                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
-                                            </label>
-                                            <label height="14" alignment="left" text="5 Modules, 13 Sessions" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="Lb5-Nq-gBJ">
-                                                <fontDescription key="font" type="system" pointSize="10"/>
-                                            </label>
-                                        </items>
-                                        <gestureRecognizers>
-                                            <tapGestureRecognizer id="MZy-wd-naD"/>
-                                        </gestureRecognizers>
-                                        <color key="backgroundColor" red="0.54087144136428833" green="0.33639824390411377" blue="0.47577387094497681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </group>
-                                </tableRow>
-                                <tableRow id="HW9-Tk-a0h">
-                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="Bja-xe-ZjB">
-                                        <items>
-                                            <label height="21" alignment="left" text="Stress Management" textAlignment="left" baselineAdjustment="alignCenters" id="Lj6-lI-v1s">
-                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
-                                            </label>
-                                            <label height="14" alignment="left" text="4 Modules, 10 Sessions" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="cnq-kJ-FmU">
-                                                <fontDescription key="font" type="system" pointSize="10"/>
-                                            </label>
-                                        </items>
-                                        <gestureRecognizers>
-                                            <tapGestureRecognizer id="EDO-Jh-XLK"/>
-                                        </gestureRecognizers>
-                                        <color key="backgroundColor" red="0.64206022024154663" green="0.42010593414306641" blue="0.49857157468795776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </group>
-                                </tableRow>
-                                <tableRow id="OHl-a3-kPA">
-                                    <group key="rootItem" width="1" height="40" alignment="left" layout="vertical" id="pkm-Ld-9o0">
-                                        <items>
-                                            <label height="21" alignment="left" text="Walking Meditation" textAlignment="left" baselineAdjustment="alignCenters" id="dyV-cD-pFI">
-                                                <fontDescription key="font" type="system" weight="semibold" pointSize="12"/>
-                                            </label>
-                                            <label height="14" alignment="left" text="1 Module, 2 Sessions" textAlignment="left" baselineAdjustment="alignCenters" minimumScaleFactor="0.0" id="kzQ-G7-TrQ">
-                                                <fontDescription key="font" type="system" pointSize="10"/>
-                                            </label>
-                                        </items>
-                                        <gestureRecognizers>
-                                            <tapGestureRecognizer id="LHw-8t-uLO"/>
-                                        </gestureRecognizers>
-                                        <color key="backgroundColor" red="0.71607106924057007" green="0.48357433080673218" blue="0.522541344165802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </group>
-                                </tableRow>
+                                <button width="1" height="35" alignment="left" accessibilityLabel="Digital Detox" title="Digital Detox" id="SWW-6f-gGM">
+                                    <color key="backgroundColor" red="0.46179169419999999" green="0.30599743130000001" blue="0.44830721620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12.5"/>
+                                    <connections>
+                                        <action selector="startDigitalDetox" destination="AgC-eL-Hgc" id="9sV-zm-7jx"/>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="TfE-No-JuW"/>
+                                    </connections>
+                                </button>
                             </items>
-                        </table>
+                        </group>
+                        <group width="1" alignment="left" id="TId-YF-XQT">
+                            <items>
+                                <button width="1" height="35" alignment="left" accessibilityLabel="Digital Detox" title="Small Business" id="pFE-B8-u9f">
+                                    <color key="backgroundColor" red="0.51307451729999998" green="0.34681284429999998" blue="0.46873778100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12.5"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="Xo1-PQ-6l1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="cYm-vv-mfy">
+                            <items>
+                                <button width="1" height="35" alignment="left" accessibilityLabel="Digital Detox" title="Stress Management" id="Ej4-Qe-6io">
+                                    <color key="backgroundColor" red="0.60937619210000005" green="0.42957627770000001" blue="0.49422544239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12.5"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="fJE-gG-abn"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="YEe-mP-68m">
+                            <items>
+                                <button width="1" height="35" alignment="left" accessibilityLabel="Digital Detox" title="Walking Meditation" id="1YR-er-AhR">
+                                    <color key="backgroundColor" red="0.68384796380000001" green="0.49114829300000001" blue="0.52275830509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="12.5"/>
+                                    <connections>
+                                        <segue destination="CM5-L8-Vid" kind="push" id="alo-14-hTH"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
-                    <connections>
-                        <outlet property="myTable" destination="4AP-cl-IcF" id="MgT-m1-bkH"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-588" y="532"/>
@@ -95,39 +68,21 @@
                     <items>
                         <button width="1" alignment="left" title="Relationship" id="4ub-AJ-bjg">
                             <color key="backgroundColor" red="0.50196078431372548" green="0.79607843137254897" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Zwx-7r-Hdf" kind="push" id="5Ya-Dw-ySC"/>
-                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Sleep" id="SGb-qf-KEd">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Zwx-7r-Hdf" kind="push" id="CDa-PZ-2z2"/>
-                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Awareness" id="jwL-6Y-2ah">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Zwx-7r-Hdf" kind="push" id="WJG-uY-DZ6"/>
-                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Focus" id="85b-gi-cMN">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Zwx-7r-Hdf" kind="push" id="dYy-MW-V4J"/>
-                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Responding" id="4Zy-ij-7y9">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Zwx-7r-Hdf" kind="push" id="aNw-Ka-ABb"/>
-                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Stress" id="eCR-L7-6Ls">
                             <color key="backgroundColor" red="0.50196078430000002" green="0.79607843140000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="Zwx-7r-Hdf" kind="push" id="tzQ-CQ-DfW"/>
-                            </connections>
                         </button>
                         <button width="1" alignment="left" title="Skip" id="HIx-en-AHO">
                             <connections>
@@ -171,6 +126,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="836" y="937"/>
+        </scene>
+        <!--QuestionView-->
+        <scene sceneID="tpq-ij-VPf">
+            <objects>
+                <controller identifier="QuestionView" id="oIR-7e-de3" customClass="InterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Test" textAlignment="center" numberOfLines="10" id="B4m-35-21U"/>
+                    </items>
+                    <connections>
+                        <outlet property="QuestionText" destination="B4m-35-21U" id="g2n-BB-Isw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="51" y="-24"/>
         </scene>
         <!--MoodTracker-->
         <scene sceneID="z7f-NI-4bC">
@@ -347,7 +316,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="gnC-bl-vAj"/>
         <segue reference="EOt-R6-Qbc"/>
-        <segue reference="5Ya-Dw-ySC"/>
-        <segue reference="kjw-F8-00Z"/>
+        <segue reference="TfE-No-JuW"/>
     </inferredMetricsTieBreakers>
 </document>
