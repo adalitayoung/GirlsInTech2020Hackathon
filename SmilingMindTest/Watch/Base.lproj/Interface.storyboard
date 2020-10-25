@@ -148,7 +148,7 @@
                         <label alignment="center" verticalAlignment="center" semanticContentAttribute="spatial" text="36" textAlignment="right" baselineAdjustment="alignCenters" numberOfLines="0" id="zXH-Bw-JfC">
                             <fontDescription key="font" type="system" weight="medium" pointSize="60"/>
                         </label>
-                        <label height="17" alignment="center" verticalAlignment="center" text="days" id="Jcs-ei-ukq">
+                        <label height="20" alignment="center" verticalAlignment="center" text="days" id="Jcs-ei-ukq">
                             <fontDescription key="font" type="system" pointSize="14"/>
                         </label>
                         <imageView width="50" height="50" alignment="center" image="SmilingMindIcon" id="tG5-I0-fdb"/>
@@ -448,7 +448,6 @@
         <segue reference="659-jT-4PQ"/>
         <segue reference="alo-14-hTH"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" name="AccentColor"/>
     <resources>
         <image name="SmilingMindIcon" width="113" height="110"/>
         <image name="play.circle.fill" catalog="system" width="128" height="121"/>
